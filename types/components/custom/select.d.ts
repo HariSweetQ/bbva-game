@@ -10,6 +10,7 @@ export declare class CustomSelect extends LitElement {
 	static readonly styles: import('lit').CSSResult[];
 	options: SelectOption[];
 	selected: string;
+	disabled: boolean;
 	emptyOption: string;
 	private __show;
 	private __selected;
@@ -22,6 +23,7 @@ export declare class CustomSelect extends LitElement {
 	 */
 	get classes(): {
 		'select-wrapper': boolean;
+		disabled: boolean;
 		closed: boolean;
 	};
 	/**

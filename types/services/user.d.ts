@@ -53,7 +53,11 @@ declare class UserService {
 	 */
 	routeInterceptor(navigation: any): {
 		intercept: boolean;
-		redirect: { page: string } | undefined;
+		redirect:
+			| {
+					page: string;
+			  }
+			| undefined;
 	};
 }
 export declare const userSvc: UserService;

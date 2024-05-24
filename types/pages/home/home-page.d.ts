@@ -15,5 +15,6 @@ export declare class HomePage extends LitElement {
 	 * Do login function
 	 */
 	doLogin(): Promise<void>;
+	onKeyUpHandler(e: KeyboardEvent): void;
 	render(): import('lit-html').TemplateResult<1>;
 }

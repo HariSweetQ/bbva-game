@@ -12,6 +12,7 @@ export default defineConfig({
 		svgLoader(),
 		VitePWA({
 			registerType: 'autoUpdate',
+			useCredentials: true,
 			devOptions: {
 				enabled: true,
 			},

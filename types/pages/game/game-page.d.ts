@@ -39,7 +39,7 @@ export declare class GamePage extends LitElement {
 	/**
 	 * On header change habdler
 	 */
-	onLevelChangeHandler(): void;
+	onLevelChangeHandler(e: CustomEvent): void;
 	/**
 	 * Update game params
 	 * @param params
