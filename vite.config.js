@@ -19,7 +19,6 @@ export default defineConfig({
 			workbox: {
 				globPatterns: ['**/*.{js,css,html,ico,png,svg,ttf}'],
 			},
-			includeAssets: ['**/*.{png}'],
 			manifest: {
 				name: 'BBVA Memory Cards',
 				short_name: 'MemoryCards',
