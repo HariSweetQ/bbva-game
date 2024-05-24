@@ -5,7 +5,7 @@
 	--select-border-color: var(--border-color);
 	--select-border-radius: var(--border-radius);
 
-	position: relative;
+	position: relative;  
 
 	button {
 		color: var(--select-text-color);
@@ -30,7 +30,7 @@
 				right: var(--padding);
 				font-size: 0px;
 			}
-		}
+		}    
 	}
 
 	ul {
@@ -70,4 +70,10 @@
 			display: none;
 		}
 	}
+}
+
+:host([disabled]) {
+  cursor: default;
+  pointer-events: none;
+  opacity: .4;
 }

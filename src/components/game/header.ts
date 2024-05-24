@@ -1,10 +1,13 @@
+import { ElementController } from '@open-cells/element-controller';
 import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { translate as t } from 'lit-i18n';
 
 import styles from './header.scss?inline';
 import { gameSvc } from '../../services/game';
+import { GameParams } from '../../types/game';
 import { User } from '../../types/user';
+import { CHANNELS } from '../../utils/constants';
 import '../custom/select';
 import '../custom/icon';
 
@@ -13,10 +16,33 @@ import '../custom/icon';
  */
 @customElement('game-header')
 export class GameHeader extends LitElement {
+	elementController = new ElementController(this);
+
 	static readonly styles = [unsafeCSS(styles)];
 
 	@property({ type: Object })
 	user: User | null = null;
+
+	@property()
+	private __isPlaying: boolean = false;
+
+	/**
+	 * WC Lifecycle method
+	 */
+	connectedCallback(): void {
+		super.connectedCallback();
+		this.elementController.subscribe(CHANNELS.GAME, (params: GameParams) => {
+			this.__isPlaying = params.isPlaying;
+		});
+	}
+
+	/**
+	 * WC Lifecycle method
+	 */
+	disconnectedCallback(): void {
+		super.disconnectedCallback();
+		this.elementController.unsubscribe(CHANNELS.GAME);
+	}
 
 	/**
 	 * On change handler
@@ -40,6 +66,7 @@ export class GameHeader extends LitElement {
 		return html`
 			<custom-select
 				empty-option="game.chooseLevel"
+				?disabled=${this.__isPlaying}
 				selected=${gameSvc.defaultLevel}
 				.options=${gameSvc.levelOptions.map((level) => level)}
 				@change=${this.onLevelChangeHandler}>

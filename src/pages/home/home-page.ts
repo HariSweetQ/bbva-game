@@ -48,6 +48,12 @@ export class HomePage extends LitElement {
 		}
 	}
 
+	onKeyUpHandler(e: KeyboardEvent) {
+		if (e.key === 'Enter') {
+			this.doLogin();
+		}
+	}
+
 	render() {
 		return html`
 			<header-component></header-component>
@@ -61,6 +67,7 @@ export class HomePage extends LitElement {
 					@input=${() => {
 						this.__invalid = false;
 					}}
+					@keyup=${this.onKeyUpHandler}
 					@change=${(e: InputEvent) => (this.__form.user = e.detail)}
 					validation="required"
 					placeholder=${t('fields.user')}></custom-input>

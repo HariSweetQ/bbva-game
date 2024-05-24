@@ -24,6 +24,9 @@ export class CustomSelect extends LitElement {
 	@property({ type: String })
 	selected: string = '';
 
+	@property({ type: Boolean })
+	disabled: boolean = false;
+
 	@property({ type: String, attribute: 'empty-option' })
 	emptyOption: string = 'chooseOption';
 
@@ -50,6 +53,7 @@ export class CustomSelect extends LitElement {
 	get classes() {
 		return {
 			'select-wrapper': true,
+			disabled: this.disabled,
 			closed: !this.__show,
 		};
 	}

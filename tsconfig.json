@@ -23,12 +23,7 @@
 		"outDir": "./types",
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
-		"isolatedModules": true,
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["./src/*"]
-		},
-		"types": ["node", "webdriverio", "@wdio/mocha-framework"]
+		"isolatedModules": true
 	},
 	"include": ["src/**/*"]
 }

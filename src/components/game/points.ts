@@ -33,6 +33,14 @@ export class GamePoints extends LitElement {
 	}
 
 	/**
+	 * WC Lifecycle method
+	 */
+	disconnectedCallback(): void {
+		super.disconnectedCallback();
+		this.elementController.unsubscribe(CHANNELS.GAME);
+	}
+
+	/**
 	 * Render
 	 * @returns {TemplateResult}
 	 */

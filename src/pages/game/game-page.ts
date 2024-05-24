@@ -61,7 +61,10 @@ export class GamePage extends LitElement {
 		this.__params = { ...gameSvc.defaultParams };
 		this.__playAgain = false;
 		this.__gameStart = true;
-		this.updateGameParams(this.__params);
+		this.updateGameParams({
+			...this.__params,
+			isPlaying: true,
+		});
 		this.updateGridOptions();
 	}
 
@@ -71,9 +74,16 @@ export class GamePage extends LitElement {
 	onSuccessHandler() {
 		this.__params.points += gameSvc.getLevelPoints(this.__level);
 
-		this.updateGameParams(this.__params);
+		this.updateGameParams({
+			...this.__params,
+			isPlaying: false,
+		});
 		setTimeout(() => {
 			this.updateGridOptions();
+			this.updateGameParams({
+				...this.__params,
+				isPlaying: true,
+			});
 		}, 5000);
 	}
 
@@ -82,6 +92,10 @@ export class GamePage extends LitElement {
 	 */
 	onFailureHandler() {
 		this.__playAgain = true;
+		this.updateGameParams({
+			...this.__params,
+			isPlaying: false,
+		});
 	}
 
 	/**
