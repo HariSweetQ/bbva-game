@@ -1,8 +1,7 @@
 {
 	"private": true,
 	"name": "memory-cards",
-	"description": "BBVA Test Memory Cards Game",
-	"license": "Apache-2.0",
+	"description": "BBVA Test Memory Cards Game",	
 	"version": "0.1.0",
 	"author": "Jesús García González <jesus.garciag@sngular.com>",
 	"type": "module",
