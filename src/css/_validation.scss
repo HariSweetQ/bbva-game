@@ -1,0 +1,9 @@
+:host {
+  .invalid {
+    border-color: var(--error-border-color);
+  }
+  .error {
+    color: var(--error-color);
+    font-size: var(--font-size-m);
+  }
+}

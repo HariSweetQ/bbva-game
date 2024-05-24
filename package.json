@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "memory-cards",
+  "description": "BBVA Test Memory Cards Game",
+  "license": "Apache-2.0",
+  "version": "0.1.0",
+  "author": "Jesús García González <jesus.garciag@sngular.com>",
+  "type": "module",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "vite",
+    "build": "tsc && vite build",
+    "preview": "npm run build && vite preview"
+  },
+  "dependencies": {
+    "@material/web": "^1.4.0",
+    "@open-cells/core": "^1.0.0-beta.2",
+    "@open-cells/element-controller": "^1.0.0-beta.3",
+    "@open-cells/page-controller": "^1.0.0-beta.3",
+    "@open-cells/page-transitions": "^1.0.0-beta.1",
+    "i18next": "^23.11.5",
+    "lit": "^3.0.0",
+    "lit-i18n": "^4.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.77.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.7",
+    "vite-plugin-pwa": "^0.20.0",
+    "vite-svg-loader": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.15.0",
+    "npm": ">=7.0.0"
+  }
+}

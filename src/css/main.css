@@ -1,0 +1,45 @@
+:root {  
+  --primary-bg-color: #072146;
+  --primary-text-color: #FFFFFF;
+  --select-bg-color: #FFFFFF;
+  --select-border-color: #FFFFFF;
+  --select-text-color: #000000;
+  --select-bg-color-hover: #07214610;
+  --select-text-color-hover: #000000;
+  --border-color: #CCCCCC;
+  --border-radius: 4px;
+  --error-color: red;
+  --error-border-color: red;
+  --padding: 8px;
+  --font-size-s: 8px;
+  --font-size-m: 10px;
+  --font-size-l: 14px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 32px;
+  --icon-size-s: 12px;
+  --icon-size-m: 24px;
+  --icon-size-l: 48px;
+  --icon-size-xl: 96px;
+  --wrapper-width: 1280px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'LibreFranklin', sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+.layout-wrapper {
+  display: flex;  
+  align-items: center;
+  justify-content: center;  
+  margin: 0 auto;
+  width: 100%;
+  background-color: red;  
+  max-width: var(--wrapper-width);
+}

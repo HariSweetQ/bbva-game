@@ -1,0 +1,29 @@
+@use 'src/css/_validation';
+
+:host {
+    --input-min-width: 100px;
+    --input-min-height: 40px;
+    --input-font-size: var(--font-size-m);
+    --input-border-color: var(--border-color);
+    --input-border-radius: var(--border-radius);
+  
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: var(--input-min-width);     
+  }
+  
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    height: var(--input-min-height);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    padding: var(--padding);
+    margin: 0;
+    outline: none;
+  }
+}
