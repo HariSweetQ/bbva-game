@@ -1,4 +1,4 @@
-import { StoreInterface } from "../../types/storage";
+import { StoreInterface } from '../../types/storage';
 /**
  * Local store service to interact with localStorage
  */

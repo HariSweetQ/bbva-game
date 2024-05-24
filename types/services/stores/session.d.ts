@@ -1,4 +1,4 @@
-import { StoreInterface } from "../../types/storage";
+import { StoreInterface } from '../../types/storage';
 /**
  * Session store service to interact with sessionStorage
  */

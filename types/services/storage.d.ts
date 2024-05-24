@@ -1,4 +1,4 @@
-import { StorageService } from "../types/storage.d";
+import { StorageService } from '../types/storage.d';
 /**
  * Storage service.
  * Common interface to handle different storage methods all in one

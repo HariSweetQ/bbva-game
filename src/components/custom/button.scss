@@ -1,28 +1,26 @@
-:host {  
-  --button-min-width: 80px;
-  --button-min-height: 40px;
-  --button-primary-bg-color: var(--primary-bg-color);
-  --button-primary-text-color: var(--primary-text-color);
-  --button-padding: var(--padding);
-  --button-border-radius: 4px;
-  --button-font-size: var(--font-size-xl);
-  
-  
+:host {
+	--button-min-width: 80px;
+	--button-min-height: 40px;
+	--button-primary-bg-color: var(--primary-bg-color);
+	--button-primary-text-color: var(--primary-text-color);
+	--button-padding: var(--padding);
+	--button-border-radius: 4px;
+	--button-font-size: var(--font-size-xl);
 
-  button {
-    min-width: var(--button-min-width);
-    min-height: var(--button-min-height);
-    padding: var(--button-padding);    
-    border-radius: var(--button-border-radius);
-    font-size: var(--button-font-size);
-    border-width: 1px;
-    border-style: solid;
-    cursor: pointer;
-    
-    &.primary {
-      border-color: var(--button-primaru-bg-color);
-      background-color: var(--button-primary-bg-color);
-      color: var(--button-primary-text-color);
-    }
-  }
+	button {
+		min-width: var(--button-min-width);
+		min-height: var(--button-min-height);
+		padding: var(--button-padding);
+		border-radius: var(--button-border-radius);
+		font-size: var(--button-font-size);
+		border-width: 1px;
+		border-style: solid;
+		cursor: pointer;
+
+		&.primary {
+			border-color: var(--button-primaru-bg-color);
+			background-color: var(--button-primary-bg-color);
+			color: var(--button-primary-text-color);
+		}
+	}
 }

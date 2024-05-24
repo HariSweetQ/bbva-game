@@ -1,14 +1,14 @@
 @use 'src/css/_layout';
 
 .layout-wrapper {
-  height: 100%;
-  position: relative;
+	height: 100%;
+	position: relative;
 
-  game-points {
-    text-align: right;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: calc(var(--padding) * 2);
-  }
+	game-points {
+		text-align: right;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: calc(var(--padding) * 2);
+	}
 }

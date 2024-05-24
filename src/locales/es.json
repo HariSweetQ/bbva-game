@@ -1,33 +1,32 @@
 {
-  "chooseOption": "Selecciona una opción",
-  "home": {    
-    "login": "Login"
-  },
-  "fields": {
-    "user": "Nombre del jugador"
-  },
-  "validation": {
-    "required": "{{field}} es obligatorio"
-  },
-  "game": {
-    "title": "Memory Cards",
-    "total": "Total",
-    "start": "Inicio",
-    "startInfo": "Pulsa el botón 'Inicio' para jugar",
-    "chooseLevel": "Selecciona un nivel",
-    "level": "Nivel",
-    "playAgain": "Jugar de nuevo",
-    "text": {
-      "instructions": "Memoriza los números. Tienes {{timer}} segundos",
-      "guess": "¿Dondé está el número {{number}}?",
-      "failure": "¡Has fallado!",
-      "success": "¡Correcto!"
-    },
-    "options":
-    {
-      "easy": "Facil",
-      "medium": "Medio",
-      "hard": "Difícil"
-    }
-  }
+	"chooseOption": "Selecciona una opción",
+	"home": {
+		"login": "Login"
+	},
+	"fields": {
+		"user": "Nombre del jugador"
+	},
+	"validation": {
+		"required": "{{field}} es obligatorio"
+	},
+	"game": {
+		"title": "Memory Cards",
+		"total": "Total",
+		"start": "Inicio",
+		"startInfo": "Pulsa el botón 'Inicio' para jugar",
+		"chooseLevel": "Selecciona un nivel",
+		"level": "Nivel",
+		"playAgain": "Jugar de nuevo",
+		"text": {
+			"instructions": "Memoriza los números. Tienes {{timer}} segundos",
+			"guess": "¿Dondé está el número {{number}}?",
+			"failure": "¡Has fallado!",
+			"success": "¡Correcto!"
+		},
+		"options": {
+			"easy": "Facil",
+			"medium": "Medio",
+			"hard": "Difícil"
+		}
+	}
 }

@@ -1,23 +1,23 @@
 :host {
-  display: block;
-  .layout-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: var(--padding);
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: var(--wrapper-width);
-  }
+	display: block;
+	.layout-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: var(--padding);
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		width: 100%;
+		max-width: var(--wrapper-width);
+	}
 
-  .layout-footer {
-    position: fixed;
-    bottom: 0;
-    height: 10vh;
-    padding: calc(var(--padding) * 2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+	.layout-footer {
+		position: fixed;
+		bottom: 0;
+		height: 10vh;
+		padding: calc(var(--padding) * 2);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }

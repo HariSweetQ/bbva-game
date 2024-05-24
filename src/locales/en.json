@@ -1,14 +1,13 @@
 {
-  "game": {
-    "start": "Start",
-    "startInfo": "Click 'Start' button to play",
-    "chooseLevel": "Choose a level",
-    "level": "Level",
-    "options":
-    {
-      "easy": "Easy",
-      "medium": "Medium",
-      "hard": "Hard"
-    }
-  }
+	"game": {
+		"start": "Start",
+		"startInfo": "Click 'Start' button to play",
+		"chooseLevel": "Choose a level",
+		"level": "Level",
+		"options": {
+			"easy": "Easy",
+			"medium": "Medium",
+			"hard": "Hard"
+		}
+	}
 }

@@ -1,36 +1,56 @@
 {
-  "private": true,
-  "name": "memory-cards",
-  "description": "BBVA Test Memory Cards Game",
-  "license": "Apache-2.0",
-  "version": "0.1.0",
-  "author": "Jesús García González <jesus.garciag@sngular.com>",
-  "type": "module",
-  "scripts": {
-    "start": "npm run serve",
-    "serve": "vite",
-    "build": "tsc && vite build",
-    "preview": "npm run build && vite preview"
-  },
-  "dependencies": {
-    "@material/web": "^1.4.0",
-    "@open-cells/core": "^1.0.0-beta.2",
-    "@open-cells/element-controller": "^1.0.0-beta.3",
-    "@open-cells/page-controller": "^1.0.0-beta.3",
-    "@open-cells/page-transitions": "^1.0.0-beta.1",
-    "i18next": "^23.11.5",
-    "lit": "^3.0.0",
-    "lit-i18n": "^4.1.0"
-  },
-  "devDependencies": {
-    "sass": "^1.77.2",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.7",
-    "vite-plugin-pwa": "^0.20.0",
-    "vite-svg-loader": "^5.1.0"
-  },
-  "engines": {
-    "node": ">=18.15.0",
-    "npm": ">=7.0.0"
-  }
+	"private": true,
+	"name": "memory-cards",
+	"description": "BBVA Test Memory Cards Game",
+	"license": "Apache-2.0",
+	"version": "0.1.0",
+	"author": "Jesús García González <jesus.garciag@sngular.com>",
+	"type": "module",
+	"scripts": {
+		"start": "npm run serve",
+		"serve": "vite",
+		"build": "tsc && vite build",
+		"preview": "npm run build && vite preview",
+		"test": "wdio run ./wdio.conf.ts",
+		"lint": "npm run lint:prettier",
+		"lint:prettier": "prettier --check .",
+		"format": "npm run format:prettier",
+		"format:prettier": "npm run lint:prettier -- --write",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"@material/web": "^1.4.0",
+		"@open-cells/core": "^1.0.0-beta.2",
+		"@open-cells/element-controller": "^1.0.0-beta.3",
+		"@open-cells/page-controller": "^1.0.0-beta.3",
+		"@open-cells/page-transitions": "^1.0.0-beta.1",
+		"i18next": "^23.11.5",
+		"lit": "^3.1.3",
+		"lit-i18n": "^4.1.0"
+	},
+	"devDependencies": {
+		"@sngular/commitlint-config": "^1.0.0",
+		"@sngular/eslint-config": "^1.0.1",
+		"@sngular/lint-staged-config": "^1.0.0",
+		"@sngular/prettier-config": "^1.0.0",
+		"@sngular/semantic-release-config": "^2.0.0",
+		"@types/jest": "^29.5.12",
+		"@types/mocha": "^10.0.6",
+		"@wdio/browser-runner": "^8.37.0",
+		"@wdio/cli": "^8.37.0",
+		"@wdio/mocha-framework": "^8.37.0",
+		"@wdio/spec-reporter": "^8.37.0",
+		"@web/dev-server-legacy": "^2.1.1",
+		"husky": "^9.0.11",
+		"sass": "^1.77.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.7",
+		"vite-plugin-pwa": "^0.20.0",
+		"vite-svg-loader": "^5.1.0"
+	},
+	"engines": {
+		"node": ">=18.15.0",
+		"npm": ">=7.0.0"
+	}
 }

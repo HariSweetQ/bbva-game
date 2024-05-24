@@ -1,4 +1,4 @@
-import { StoreInterface } from "../../types/storage";
+import { StoreInterface } from '../../types/storage';
 /**
  * Cookies store service to handle cookie management
  */

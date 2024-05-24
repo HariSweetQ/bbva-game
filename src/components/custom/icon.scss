@@ -1,31 +1,31 @@
-:host {  
-  i {  
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: cover;      
+:host {
+	i {
+		display: inline-block;
+		background-repeat: no-repeat;
+		background-size: cover;
 
-    &.invert {
-      filter: invert(1);
-    }
+		&.invert {
+			filter: invert(1);
+		}
 
-    &.icon-s {    
-      width: var(--icon-size-s);
-      height: var(--icon-size-s);
-    }
+		&.icon-s {
+			width: var(--icon-size-s);
+			height: var(--icon-size-s);
+		}
 
-    &.icon-m {    
-      width: var(--icon-size-m);
-      height: var(--icon-size-m);
-    }
+		&.icon-m {
+			width: var(--icon-size-m);
+			height: var(--icon-size-m);
+		}
 
-    &.icon-l {    
-      width: var(--icon-size-l);
-      height: var(--icon-size-l);
-    }
+		&.icon-l {
+			width: var(--icon-size-l);
+			height: var(--icon-size-l);
+		}
 
-    &.icon-xl {    
-      width: var(--icon-size-xl);
-      height: var(--icon-size-xl); 
-    } 
-  }
+		&.icon-xl {
+			width: var(--icon-size-xl);
+			height: var(--icon-size-xl);
+		}
+	}
 }

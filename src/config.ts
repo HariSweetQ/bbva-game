@@ -1,8 +1,8 @@
 export default {
-  storages: {
-    default: 'session',
-    cookies: {
-     expireDays: 1 
-    }
-  }
-}
+	storages: {
+		default: 'session',
+		cookies: {
+			expireDays: 1,
+		},
+	},
+};

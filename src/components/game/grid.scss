@@ -1,54 +1,54 @@
 :host {
-  width: 100%;
+	width: 100%;
 
-  --valid-color: green;
-  --invalid-color: red;
+	--valid-color: green;
+	--invalid-color: red;
 
-  p {
-    margin: 0;
-    padding: calc(var(--padding) * 2);
-    text-align: center;
-    &.valid {
-      font-weight: 700;
-      font-size: var(--font-size-xl);
-      color: var(--valid-color);
-    }
-  
-    &.invalid {
-      font-weight: 700;
-      font-size: var(--font-size-xl);
-      color: var(--invalid-color);
-    }
-  }
+	p {
+		margin: 0;
+		padding: calc(var(--padding) * 2);
+		text-align: center;
+		&.valid {
+			font-weight: 700;
+			font-size: var(--font-size-xl);
+			color: var(--valid-color);
+		}
 
-  .grid {
-    padding: calc(var(--padding) * 2);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: calc(var(--padding) * 2);
-    height: 50vh;
-    &.restrain {
-      pointer-events: none;
-    }
+		&.invalid {
+			font-weight: 700;
+			font-size: var(--font-size-xl);
+			color: var(--invalid-color);
+		}
+	}
 
-    .option {
-      cursor: pointer;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-width: 1px;
-      border-style: solid;
-      border-radius: var(--border-radius);
-      border-color: var(--border-color);
-      font-size: var(--font-size-xxl);
+	.grid {
+		padding: calc(var(--padding) * 2);
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: calc(var(--padding) * 2);
+		height: 50vh;
+		&.restrain {
+			pointer-events: none;
+		}
 
-      &.valid {
-        background-color: var(--valid-color);
-      }
-      &.invalid {
-        background-color: var(--invalid-color);
-      }
-    }
-  }
+		.option {
+			cursor: pointer;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-width: 1px;
+			border-style: solid;
+			border-radius: var(--border-radius);
+			border-color: var(--border-color);
+			font-size: var(--font-size-xxl);
+
+			&.valid {
+				background-color: var(--valid-color);
+			}
+			&.invalid {
+				background-color: var(--invalid-color);
+			}
+		}
+	}
 }
