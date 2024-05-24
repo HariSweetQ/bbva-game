@@ -13,7 +13,7 @@ class GameService {
 		text: t(`game.options.${this.levels[key].value}`),
 	}));
 
-	defaultParams: GameParams = { points: 0 };
+	defaultParams: GameParams = { points: 0, isPlaying: false };
 
 	/**
 	 * Get shuffle matrix
