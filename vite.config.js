@@ -20,13 +20,13 @@ export default defineConfig({
 				globPatterns: ['**/*.{js,css,html,ico,png,svg,ttf}'],
 			},
 			manifest: {
-				name: 'BBVA Memory Cards',
+				name: 'Memory Cards Demo for BBVA',
 				short_name: 'Memory Cards',
 				description: 'Memory Cards Game Demo for BBVA',
 				theme_color: '#072146',
 				background_color: '#072146',
-				display: 'browser',
-				orientation: 'portrait',
+				display: 'standalone',
+				orientation: 'any',
 				scope: '/',
 				start_url: '/',
 				icons: [
