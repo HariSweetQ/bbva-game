@@ -39,7 +39,7 @@ export class GameGrid extends LitElement {
 	get classes() {
 		return {
 			grid: true,
-			restrain: this.__visibleOptions,
+			restrain: this.__visibleOptions || this.__answer,
 		};
 	}
 
@@ -81,7 +81,7 @@ export class GameGrid extends LitElement {
 	 * @param {MouseEvent|TouchEvent} e Event
 	 */
 	onClickHandler(e: MouseEvent | TouchEvent) {
-		if (!this.__visibleOptions) {
+		if (!this.__visibleOptions && !this.__answer) {
 			const target = e.target as HTMLDivElement;
 			if (target.classList.contains('option')) {
 				const parent = target.parentNode;
